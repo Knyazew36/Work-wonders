@@ -234,7 +234,7 @@ body {
 }
 .platform__content {
   height: 2432px;
-  padding-top: 122px;
+  padding-top: 127px;
   background-image: url(../images/platform-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -251,9 +251,16 @@ body {
   letter-spacing: 0.7px;
   margin-bottom: 149px;
 }
+.platform__carts-list {
+  display: flex;
+  flex-direction: column;
+  gap: 170px;
+}
+.platform__carts-list div:nth-child(odd) {
+  align-self: end;
+}
 .platform__carts {
-  max-width: 576px;
-  margin-bottom: 90px;
+  max-width: 450px;
 }
 .platform__carts-title {
   font-family: "Roboto";
@@ -279,4 +286,9 @@ body {
   border-radius: 4px;
   color: white;
   font-size: 14px;
+}
+.btn-platform:hover {
+  color: #013A4C;
+  background: #FFD063;
+  border: 1px solid #FFD063;
 }/*# sourceMappingURL=style.css.map */

@@ -278,7 +278,7 @@ body {
 
     &__content {
         height: 2432px;
-        padding-top: 122px;
+        padding-top: 127px;
         background-image: url(../images/platform-bg.jpg);
         background-repeat: no-repeat;
         background-size: cover;
@@ -299,11 +299,19 @@ body {
         margin-bottom: 149px;
     }
 
+    &__carts-list {
+        display: flex;
+        flex-direction: column;
+        gap: 170px;
+
+        & div:nth-child(odd) {
+            align-self: end;
+        }
+
+    }
+
     &__carts {
-
-        max-width: 576px;
-        margin-bottom: 90px;
-
+        max-width: 450px;
     }
 
     &__carts-title {
@@ -317,6 +325,7 @@ body {
     }
 
     &__carts-text {
+
         font-weight: 400;
         font-size: 18px;
         line-height: 24px;
@@ -334,4 +343,10 @@ body {
     border-radius: 4px;
     color: white;
     font-size: 14px;
+
+    &:hover {
+        color: #013A4C;
+        background: #FFD063;
+        border: 1px solid #FFD063;
+    }
 }
